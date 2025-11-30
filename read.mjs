@@ -7,7 +7,7 @@ export default async function read() {
         if (process.argv.length === 3) {
             const flag = process.argv.at(-1);
 
-            if (process.argv.at(-1) === '--example') {
+            if (flag === '--example') {
                 useExample = true;
             } else {
                 throw new Error(`Unknown argument: "${flag}". Use "--example" to read from example input.`);
